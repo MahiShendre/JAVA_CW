@@ -1,5 +1,5 @@
 import java.util.*;
-class Program14{
+class Program15{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -12,13 +12,12 @@ class Program14{
             arr[i] = sc.nextInt();
         }
         
-        System.out.println("Enetr the number to search in array : ");
-        int search = sc.nextInt();
-
+        int sum = 0;
         for(int i = 0; i < size; i++){
-            if(arr[i] == search ){
-                System.out.println(arr[i] + " found at index "+ i);
-            }
+            if(i % 2 != 0){
+                sum = sum + arr[i];
+            }   
         }
+        System.out.println("sum is : " + sum);
     }
 }
