@@ -1,5 +1,5 @@
 import java.io.*;
-class Program5{
+class Program6{
     public static void main(String[] args)throws IOException{
         BufferedReader br = new BufferedReader( new InputStreamReader (System.in));
 
@@ -12,12 +12,13 @@ class Program5{
             arr[i] = Integer.parseInt(br.readLine());
         }
 
-        int max = 1;
+        int min = 100;
+        System.out.println("Array is: ");
         for(int i = 0; i < n; i++){
-            if(arr[i] > max ){
-                max = arr [i];
+            if(arr[i] < min){
+                min = arr [i];
             }
         }
-        System.out.println("maximun: " + max);
+        System.out.println("minimum: " + min);
     }
 }
